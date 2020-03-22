@@ -1,0 +1,4 @@
+rootProject.name = 'calorie-counter'
+
+include 'calorie-counter-frontend'
+
