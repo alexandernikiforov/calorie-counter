@@ -3,6 +3,10 @@ import {NgModule} from '@angular/core';
 
 import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {FoodsModule} from "./foods/foods.module";
+import {DiaryModule} from "./diary/diary.module";
+import {MaterialDesignModule} from "./material-design/material-design.module";
 
 @NgModule({
   declarations: [
@@ -10,7 +14,11 @@ import {AppComponent} from './app.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MaterialDesignModule,
+    FoodsModule,
+    DiaryModule
   ],
   providers: [],
   bootstrap: [AppComponent]

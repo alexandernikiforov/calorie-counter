@@ -1,0 +1,13 @@
+<mat-list>
+  <mat-list-item *ngFor="let consumedFood of diary.consumedFoods">
+    <h3 class="mat-h3" matLine>{{ consumedFood.food.name }} ({{ consumedFood.weightInGrams }} grams) </h3>
+    <p class="mat-body-1" matLine>
+      ( {{ consumedFood.food.carbs}} carbohydrates,
+      {{ consumedFood.food.protein}} protein,
+      {{ consumedFood.food.fat}} fat/ 100 g )
+    </p>
+    <button mat-icon-button>
+      <mat-icon>more_vert</mat-icon>
+    </button>
+  </mat-list-item>
+</mat-list>
