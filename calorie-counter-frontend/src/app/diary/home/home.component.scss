@@ -1,4 +1,27 @@
-mat-list {
-  max-width: 1080px;
-  margin: 0 auto;
+table {
+  width: 100%;
+}
+
+.mat-cell div {
+  margin-bottom: 0;
+}
+
+.table-container {
+  padding: 2em;
+}
+
+.column-actions {
+  flex-basis: auto;
+  flex-grow: 0;
+  flex-shrink: 0;
+
+  margin-left: auto;
+}
+
+.header-actions {
+  flex-basis: auto;
+  flex-grow: 0;
+  flex-shrink: 0;
+
+  margin-left: auto;
 }

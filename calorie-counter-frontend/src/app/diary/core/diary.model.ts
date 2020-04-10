@@ -1,17 +1,17 @@
 /**
  * Model to represent diary.
  */
-export class Diary {
+export interface Diary {
   date: Date;
   consumedFoods: ConsumedFood[]
 }
 
-export class ConsumedFood {
+export interface ConsumedFood {
   food: Food;
   weightInGrams: number;
 }
 
-export class Food {
+export interface Food {
   name: string;
   calories: number;
   carbs: number;

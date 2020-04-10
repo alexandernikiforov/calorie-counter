@@ -1,6 +1,5 @@
 import {Component} from '@angular/core';
-import {BreakpointObserver, Breakpoints, BreakpointState} from "@angular/cdk/layout";
-import {MatDrawerMode} from "@angular/material/sidenav";
+import {BreakpointObserver, Breakpoints, BreakpointState} from '@angular/cdk/layout';
 
 @Component({
   selector: 'app-root',
@@ -17,10 +16,6 @@ export class AppComponent {
       .subscribe(result => {
         this.changeLayout(result);
       });
-  }
-
-  public getMode(): MatDrawerMode {
-    return this.smallScreen ? 'over' : 'side';
   }
 
   private changeLayout(state: BreakpointState) {

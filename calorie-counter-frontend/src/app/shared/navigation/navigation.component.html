@@ -1,0 +1,19 @@
+<mat-nav-list>
+  <mat-list-item (click)="close()" routerLink="/" routerLinkActive="active">
+    <mat-icon matListIcon>home</mat-icon>
+    <h3 class="mat-h3" matLine>Diary</h3>
+  </mat-list-item>
+  <mat-list-item (click)="close()" routerLink="/foods">
+    <mat-icon matListIcon>grid_on</mat-icon>
+    <h3 class="mat-h3" matLine>Foods</h3>
+  </mat-list-item>
+  <mat-divider></mat-divider>
+  <mat-list-item (click)="close()" routerLink="/">
+    <mat-icon matListIcon>settings</mat-icon>
+    <h3 class="mat-h3" matLine>Settings</h3>
+  </mat-list-item>
+  <mat-list-item (click)="close()" routerLink="/">
+    <mat-icon matListIcon>feedback</mat-icon>
+    <h3 class="mat-h3" matLine>Help & Feedback</h3>
+  </mat-list-item>
+</mat-nav-list>
