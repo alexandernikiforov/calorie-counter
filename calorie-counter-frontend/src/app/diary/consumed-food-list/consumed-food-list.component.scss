@@ -1,13 +1,11 @@
-table {
+.mat-table {
   width: 100%;
+
+  //overflow: scroll;
 }
 
 .mat-cell div {
   margin-bottom: 0;
-}
-
-.table-container {
-  padding: 2em;
 }
 
 .column-actions {
@@ -24,4 +22,15 @@ table {
   flex-shrink: 0;
 
   margin-left: auto;
+}
+
+.fab-bottom-right {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  z-index: 100;
+}
+
+.row-toggled {
+  background-color: burlywood;
 }

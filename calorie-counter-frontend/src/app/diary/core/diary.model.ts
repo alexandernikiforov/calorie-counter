@@ -1,20 +1,21 @@
 /**
  * Model to represent diary.
  */
-export interface Diary {
-  date: Date;
-  consumedFoods: ConsumedFood[]
+export type Diary = {
+  readonly date: Date;
+  readonly consumedFoods: ConsumedFood[]
 }
 
-export interface ConsumedFood {
-  food: Food;
-  weightInGrams: number;
+export type ConsumedFood = {
+  readonly food: Food;
+  readonly weightInGrams: number;
 }
 
 export interface Food {
-  name: string;
-  calories: number;
-  carbs: number;
-  protein: number;
-  fat: number;
+  readonly name: string;
+  readonly calories: number;
+  readonly carbs: number;
+  readonly protein: number;
+  readonly fat: number;
+  readonly unsaturatedFat: number;
 }

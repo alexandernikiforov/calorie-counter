@@ -1,0 +1,33 @@
+<div class="table-container">
+  <mat-table [dataSource]="consumedFoods">
+    <ng-container matColumnDef="food">
+      <mat-header-cell *matHeaderCellDef>Food</mat-header-cell>
+      <mat-cell *matCellDef="let consumedFood">
+        <div>
+          <div class="mat-title">{{ consumedFood.food.name }}</div>
+          <div class="mat-subheading-1" style="font-weight: lighter">Calories
+            100g: {{ consumedFood.food.calories }}</div>
+          <div class="mat-subheading-1" style="font-weight: lighter">
+            Carbs {{ consumedFood.food.carbs }}, protein {{ consumedFood.food.protein }},
+            fat {{ consumedFood.food.fat }}
+          </div>
+        </div>
+      </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="calories">
+      <mat-header-cell *matHeaderCellDef class="header-actions">Grams</mat-header-cell>
+      <mat-cell *matCellDef="let consumedFood" class="column-actions">{{ consumedFood.weightInGrams }}</mat-cell>
+    </ng-container>
+
+    <mat-header-row *matHeaderRowDef="displayedColumns; sticky: true"></mat-header-row>
+    <mat-row (tap)="$event ? selection.toggle(row) : null"
+             *matRowDef="let row; columns: displayedColumns;"
+             [class.row-toggled]="selection.isSelected(row)">
+    </mat-row>
+  </mat-table>
+
+  <button class="fab-bottom-right" color="primary" mat-fab>
+    <mat-icon>add</mat-icon>
+  </button>
+</div>

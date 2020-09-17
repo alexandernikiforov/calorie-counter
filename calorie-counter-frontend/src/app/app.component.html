@@ -6,10 +6,7 @@
       <app-navigation (closeItem)="smallScreen && sidenav.close()"></app-navigation>
     </mat-sidenav>
     <mat-sidenav-content>
-      <app-toolbar (tapNavMenu)="sidenav.toggle()"></app-toolbar>
-      <div class="child-content">
-        <router-outlet></router-outlet>
-      </div>
+      <router-outlet></router-outlet>
     </mat-sidenav-content>
   </mat-sidenav-container>
 </ng-template>

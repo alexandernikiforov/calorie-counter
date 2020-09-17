@@ -60,6 +60,11 @@
     "no-non-null-assertion": true,
     "no-redundant-jsdoc": true,
     "no-switch-case-fall-through": true,
+    "no-trailing-whitespace": [
+      true,
+      "ignore-comments",
+      "ignore-blank-lines"
+    ],
     "no-use-before-declare": true,
     "no-var-requires": false,
     "object-literal-key-quotes": [
@@ -84,7 +89,11 @@
     "template-banana-in-box": true,
     "template-no-negated-async": true,
     "use-lifecycle-interface": true,
-    "use-pipe-transform-interface": true
+    "use-pipe-transform-interface": true,
+    "whitespace": [
+      true,
+      "check-module"
+    ]
   },
   "rulesDirectory": [
     "codelyzer"

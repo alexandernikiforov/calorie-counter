@@ -1,6 +1,6 @@
-import {Injectable} from '@angular/core';
-import {ConsumedFood, Diary, Food} from "./diary.model";
-import {Observable, of} from "rxjs";
+import { Injectable } from '@angular/core';
+import { ConsumedFood, Diary, Food } from './diary.model';
+import { Observable, of } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -22,7 +22,8 @@ export class DiaryService {
       calories: 356,
       carbs: 50,
       fat: 12,
-      protein: 12,
+      unsaturatedFat: 10,
+      protein: 12
     };
 
     return Array.from({length: 50}, () => {
@@ -36,6 +37,4 @@ export class DiaryService {
   public getDiary(): Observable<Diary> {
     return this._diary$;
   }
-
-
 }
